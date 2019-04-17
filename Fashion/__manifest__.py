@@ -32,12 +32,12 @@
         "sale",
     ],
     "data": [
-   "views/res_config_settings.xml",
+  # "views/res_config_settings.xml",
     ],
     "demo": [
     ],
     "qweb": [
-        "static/src/xml/*.xml",
+   #     "static/src/xml/*.xml",
     ],
     "images": [
         'static/description/fl.png'

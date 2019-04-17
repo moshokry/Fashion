@@ -29,26 +29,11 @@
             <div class="app_settings_block" data-string="fashion" data-key="fashion" groups="base.group_system">
             	<div name="fashion_settings">
 	            	<h2>Fashion</h2>
-	            	<div class="row mt16 o_settings_container" name="extensions">
-	            		<div class="col-12 col-lg-6 o_setting_box">
-	                        <div class="o_setting_left_pane">
-	                            <field name="devision"/>
-	                        </div>
-	                        <div class="o_setting_right_pane">
-	                            <label for="module_fashion_access"/>
-	                            <div class="text-muted">
-	                                Allows the creation of groups to define access rights for fashion
-	                            </div>
-		                        <div class="content-group" attrs="{'invisible': [('module_fashion_access','=',False)]}" id="msg_module_fashion_access">
-		                            <div class="text-warning mt16"><strong>Save</strong> this page and come back here to set up the feature.</div>
-		                        </div>
-	                        </div>
-	                    </div>
-	                </div>
+	            	
                 </div>
             </div>
-    	</xpath>
-    </field>
+    	    </xpath>
+        </field>
 </record>
 
 <record id="action_fashion_settings_general" model="ir.actions.act_window">
@@ -57,7 +42,7 @@
     <field name="res_model">res.config.settings</field>
     <field name="view_mode">form</field>
     <field name="target">inline</field>
-    <field name="context">{'module' : 'muk_dms'}</field>
+    <field name="context">{'module' : 'fashion'}</field>
 </record>
 
 <menuitem id="menu_fashion_settings_general" name="General Settings" 
